@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "bebas neue";
+    color: black;
+}
+
+body {
+    background: LINEAR-GRADIENT(TO RIGHT, RGB(64, 63, 63), RGB(81, 77, 77))
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin-top: 160px;
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #fafafa, #d5d5d6);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.searchBox button img {
+    width: 2em;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 45px;
+    margin-top: -20px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20%;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.col img{
+    width: 140px;
+}
+
+.humidity{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 40px;
+    display: none;
+}
+
+.searchBox {
+    display: flex;
+    position: fixed;
+    top: 140px;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: rgb(214, 213, 213);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(214, 213, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 600px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+.card{
+    width: 70%;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.col img{
+    width: 100px;
+}
+
+.humidity{
+    font-size: 20px;
+    margin-top: -6px;
+    left: 50%;
+}
+
+.wind {
+    font-size: 20px;
+    margin-top: -6px;
+}
+}
